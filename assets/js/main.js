@@ -32,3 +32,6 @@ function smoothScroll(){
         behavior: 'smooth'
     });
 }
+
+const element = document.getElementById();
+element.scrollIntoView({behavior:'smooth'})

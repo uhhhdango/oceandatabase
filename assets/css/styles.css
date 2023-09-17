@@ -33,14 +33,12 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--front-medium);
-    /* background: url('../img/globe.png') no-repeat; */
-    /* background-size: cover; */
     background-color: black;
 }
 
 
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -80,17 +78,18 @@ header ul li a.active {
 section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 100px;
     display: flex;
+    /* top: 10vh; */
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 section img {
     position: relative;
-    top: 40vh;
-    left: 0;
-    width: 80%;
+    width: 100%;
+    top: -20px;
     height: auto;
     object-fit: cover;
     z-index: 2;
@@ -99,18 +98,20 @@ section img {
 
 #text {
     position: absolute;
+    top: 25%;
     color: rgb(255, 255, 255);
     white-space: nowrap;
-    font-size: 3vw;
+    font-size: 2.5vw;
     pointer-events: none;
     z-index: 10;
 }
 #explore
 {
+    top: 25%;
     position: absolute;
     text-decoration: none;
     display: inline-block;
-    padding: 0.5vh 1.5vw;
+    padding: 1vh 2vw;
     border-radius: 40vh;
     background-color: white;
     color: black;
@@ -120,12 +121,11 @@ section img {
 }
 
 .container {
-    position: absolute;
+    position: relative;
     color: rgb(255, 255, 255);
     white-space: nowrap;
     font-size: 1vw;
-    width: 100%;
-    height: 200%;
+    padding: 10%;
     display: flex;
     align-items: center;
     justify-content: center;

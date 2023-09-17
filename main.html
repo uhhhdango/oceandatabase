@@ -18,6 +18,7 @@
             <li>
                 <a href="#" class="active">Home</a>
                 <a href="#">Data</a>
+                <a href="#">Tool</a>
                 <a href="#">Contact</a>
                 <a href="#">About</a>
             </li>
@@ -26,17 +27,12 @@
     <section>
         <img src="assets/img/globe.png" alt="globe">
         <h2 id="text">Interractive Data Map</h2>
-        <a href="#" id="explore" onclick="smoothScroll('container')">Explore</a>
+        <a href="#" id="explore" onclick="element('container')">Explore</a>
     </section>
     <div class="container">
         <h2 id="container">Interractive Data Map</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12048204.827957673!2d109.90803566939918!3d15.573033011487725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1694260021120!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12048204.827957673!2d109.90803566939918!3d15.573033011487725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1694260021120!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
     </div>
-    <script>
-        function smoothScroll(){
-        document.querySelector('.your_class or #id here').scrollIntoView({
-            behavior: 'smooth'
-        });}
-        </script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
